@@ -1,6 +1,6 @@
 ## Fly.IO Machines SDK for Node.JS
 
-!(FlyDocs Image)[./images/fly.png]
+![FlyDocs Image](./images/fly.png)
 
 ### Install package
 
