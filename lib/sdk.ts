@@ -90,10 +90,10 @@ export class FlyMachinesSDK {
     return this.client.plainQuery(`/v1/apps/${params.appName}/machines/${params.machineId}/wait?instance_id=${params.machineInstanceId}&state=${params.desiredState}`, null, false);
   }
 
-  async createApplicationOnMachine(dto: CreateApplication, orgName: string): Promise<CreatedApp> {
+  async createApplicationOnMachine(dto: CreateApplication): Promise<CreatedApp> {
     const appDto: CreateAppDto = {
       app_name: dto.name,
-      org_slug: orgName,
+      org_slug: this.orgSlug,
     }
     const application = await this.client.plainQuery('/v1/apps', appDto, true);
     if (application.status !== 201) {
