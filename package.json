@@ -1,9 +1,10 @@
 {
   "name": "fly-machines-sdk",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "API that provides ability to manage applications on Fly.io",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": "https://github.com/usedatabrew/fly-machines-sdk",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
