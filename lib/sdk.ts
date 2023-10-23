@@ -83,7 +83,7 @@ export class FlyMachinesSDK {
   }
 
   async startApplicationInstance(appName: string, instanceId: string): Promise<Ok> {
-    return this.client.plainQuery(`/v1/apps/${appName}/machines/${instanceId}/stop`, null, false);
+    return this.client.plainQuery(`/v1/apps/${appName}/machines/${instanceId}/start`, null, false);
   }
 
   async waitUntilState(params: WaitUntilStateDto): Promise<Ok> {
