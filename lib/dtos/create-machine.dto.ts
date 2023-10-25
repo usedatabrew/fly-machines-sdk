@@ -13,6 +13,7 @@ export interface Config {
   guest?: {
     cpus: number,
     memory_mb: number,
+    cpu_kind: 'shared' | 'performance',
     kernel_args?: string[],
   }
 }
