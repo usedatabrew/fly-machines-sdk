@@ -9,6 +9,12 @@ export interface Config {
   env: any
   services: Service[]
   checks: Checks
+  size?: string;
+  guest?: {
+    cpus: number,
+    memory_mb: number,
+    kernel_args?: string[],
+  }
 }
 
 export interface Service {
