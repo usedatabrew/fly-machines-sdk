@@ -97,6 +97,7 @@ export class FlyMachinesSDK {
     }
     const application = await this.client.plainQuery('/v1/apps', appDto, true);
     if (application.status !== 201) {
+      console.error(application.result);
       throw new Error('failed_to_create_instance');
     }
 
