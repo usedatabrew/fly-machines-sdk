@@ -19,6 +19,8 @@ export interface Config {
 }
 
 export interface Service {
+  autostart: boolean
+  autostop: 0 | 1 |2
   ports: Port[]
   protocol: string
   internal_port: number

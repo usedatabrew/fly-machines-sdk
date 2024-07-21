@@ -1,14 +1,17 @@
 {
-  "name": "fly-machines-sdk",
-  "version": "1.0.6",
+  "name": "flyio-machines-sdk",
+  "version": "1.0.8",
   "description": "API that provides ability to manage applications on Fly.io",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "https://github.com/usedatabrew/fly-machines-sdk",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
-  "keywords": ["fly.io"],
+  "keywords": [
+    "fly.io"
+  ],
   "author": "DataBrew, Inc.",
   "license": "MIT",
   "devDependencies": {
@@ -23,6 +26,7 @@
     "node-fetch": "^3.3.2",
     "react": "^18.2.0",
     "ts-jest": "^29.1.1",
+    "typescript": "^5.3.3",
     "urql": "^4.0.5"
   }
 }
