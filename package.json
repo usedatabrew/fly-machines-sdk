@@ -1,5 +1,5 @@
 {
-  "name": "flyio-machines-sdk",
+  "name": "fly-machines-sdk",
   "version": "1.0.8",
   "description": "API that provides ability to manage applications on Fly.io",
   "main": "dist/index.js",
